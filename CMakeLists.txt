@@ -1,4 +1,4 @@
 cmake_minimum_required(VERSION 3.15)
 project(coinc
         VERSION 1.0.1
-        DESCRIPTION "
+        DESCRIPTION "Coinc, a program to seek co
