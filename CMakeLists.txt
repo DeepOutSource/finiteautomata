@@ -5,4 +5,4 @@ project(coinc
         LANGUAGES C
 )
 
-configure_file(coinc_config.h.i
+configure_file(coinc_config.h.in coinc_config.h
