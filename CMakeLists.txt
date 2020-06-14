@@ -6,4 +6,5 @@ project(coinc
 )
 
 configure_file(coinc_config.h.in coinc_config.h @ONLY)
-add_executable(co
+add_executable(coinc coinc.c)
+target_inc
