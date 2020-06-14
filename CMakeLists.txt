@@ -5,4 +5,5 @@ project(coinc
         LANGUAGES C
 )
 
-configure_file(coinc_config.h.in coinc_config.h
+configure_file(coinc_config.h.in coinc_config.h @ONLY)
+add_executable(co
