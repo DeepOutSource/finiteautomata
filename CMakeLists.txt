@@ -7,4 +7,5 @@ project(coinc
 
 configure_file(coinc_config.h.in coinc_config.h @ONLY)
 add_executable(coinc coinc.c)
-target_include_directories(coinc PRIVA
+target_include_directories(coinc PRIVATE
+        $<BUILD_INTERFA
