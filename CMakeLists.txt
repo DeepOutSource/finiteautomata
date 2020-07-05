@@ -11,4 +11,4 @@ target_include_directories(coinc PRIVATE
         $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}>)
 install(TARGETS coinc RUNTIME DESTINATION bin)
 
-set(C
+set(CPACK_PACKAGE_VERS
