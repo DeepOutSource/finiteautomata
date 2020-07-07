@@ -11,4 +11,4 @@ target_include_directories(coinc PRIVATE
         $<BUILD_INTERFACE:${CMAKE_BINARY_DIR}>)
 install(TARGETS coinc RUNTIME DESTINATION bin)
 
-set(CPACK_PACKAGE_VERSION "${coinc_VERSION_MAJOR}.
+set(CPACK_PACKAGE_VERSION "${coinc_VERSION_MAJOR}.${coinc_VERSION_MINOR}.${coinc_VERSIO
