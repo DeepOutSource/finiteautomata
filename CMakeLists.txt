@@ -12,4 +12,5 @@ target_include_directories(coinc PRIVATE
 install(TARGETS coinc RUNTIME DESTINATION bin)
 
 set(CPACK_PACKAGE_VERSION "${coinc_VERSION_MAJOR}.${coinc_VERSION_MINOR}.${coinc_VERSION_PATCH}")
-set(CPACK_PACKAGE_VERSION_MAJOR "${coin
+set(CPACK_PACKAGE_VERSION_MAJOR "${coinc_VERSION_MAJOR}")
+set(CPACK_PA
