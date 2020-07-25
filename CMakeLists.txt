@@ -18,4 +18,5 @@ set(CPACK_PACKAGE_VERSION_PATCH "${coinc_VERSION_PATCH}")
 set(CPACK_SOURCE_GENERATOR "TGZ")
 set(CPACK_SOURCE_IGNORE_FILES
         "^${CMAKE_SOURCE_DIR}/.git/"
-        "^${CMAKE_SOURCE_DIR}/\.id
+        "^${CMAKE_SOURCE_DIR}/\.idea/"
+        ".gitigno
