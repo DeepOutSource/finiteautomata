@@ -21,4 +21,5 @@ set(CPACK_SOURCE_IGNORE_FILES
         "^${CMAKE_SOURCE_DIR}/\.idea/"
         ".gitignore$"
         ".DS_Store$"
-        
+        "^${CMAKE_SOURCE_DIR}/build/"
+  
