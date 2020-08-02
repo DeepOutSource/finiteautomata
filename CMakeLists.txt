@@ -22,4 +22,6 @@ set(CPACK_SOURCE_IGNORE_FILES
         ".gitignore$"
         ".DS_Store$"
         "^${CMAKE_SOURCE_DIR}/build/"
-        "^${CMAKE_SOURCE
+        "^${CMAKE_SOURCE_DIR}/cmake-build-.*/"
+)
+set(CPACK_SOU
