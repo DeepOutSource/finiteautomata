@@ -1,1 +1,1 @@
-# Build and 
+# Build and install instructions for coin
