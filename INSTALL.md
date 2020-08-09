@@ -2,4 +2,4 @@
 
 ## macOS and Linux
 
-1
+1. Make a build directory,
