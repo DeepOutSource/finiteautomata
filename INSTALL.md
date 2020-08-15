@@ -2,4 +2,7 @@
 
 ## macOS and Linux
 
-1. Make a build directory,
+1. Make a build directory, e.g.
+
+    $ mkdir build
+    $ 
