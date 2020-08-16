@@ -5,4 +5,6 @@
 1. Make a build directory, e.g.
 
     $ mkdir build
-    $ 
+    $ cd build
+
+2. In the build di
