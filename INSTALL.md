@@ -7,4 +7,6 @@
     $ mkdir build
     $ cd build
 
-2. In the build di
+2. In the build directory run
+
+    $ cmake ../
