@@ -10,3 +10,9 @@
 2. In the build directory run
 
     $ cmake ../
+
+3. Followed by
+
+    $ make
+
+4. 
