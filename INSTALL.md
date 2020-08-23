@@ -15,4 +15,6 @@
 
     $ make
 
-4. 
+4. And optionally
+
+    $ mak
