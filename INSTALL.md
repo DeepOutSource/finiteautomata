@@ -17,4 +17,8 @@
 
 4. And optionally
 
-    $ mak
+    $ make install
+
+## Windows
+
+On Windo
