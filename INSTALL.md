@@ -21,4 +21,4 @@
 
 ## Windows
 
-On Windo
+On Windows it is perhaps preferable
