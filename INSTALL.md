@@ -21,4 +21,4 @@
 
 ## Windows
 
-On Windows it is perhaps preferable
+On Windows it is perhaps preferable to use CMake GUI. Visit https:/
