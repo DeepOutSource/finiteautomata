@@ -21,4 +21,4 @@
 
 ## Windows
 
-On Windows it is perhaps preferable to use CMake GUI. Visit https://cmake.org/ for more info. Most compilers, e.g.
+On Windows it is perhaps preferable to use CMake GUI. Visit https://cmake.org/ for more info. Most compilers, e.g. MSVC should work.
