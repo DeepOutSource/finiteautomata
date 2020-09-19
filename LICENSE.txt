@@ -1,1 +1,2 @@
-                    GNU GENERA
+                    GNU GENERAL PUBLIC LICENSE
+         
