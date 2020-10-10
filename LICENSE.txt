@@ -8,4 +8,5 @@
 
                             Preamble
 
-  The licenses for most software are designed t
+  The licenses for most software are designed to take away your
+freedom
