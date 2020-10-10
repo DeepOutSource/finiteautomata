@@ -9,4 +9,4 @@
                             Preamble
 
   The licenses for most software are designed to take away your
-freedom
+freedom to share and change it
