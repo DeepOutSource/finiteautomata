@@ -8,4 +8,4 @@
 
                             Preamble
 
-  The licenses f
+  The licenses for most software are designed t
