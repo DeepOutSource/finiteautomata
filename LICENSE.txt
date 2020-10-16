@@ -9,4 +9,5 @@
                             Preamble
 
   The licenses for most software are designed to take away your
-freedom to share and change it.  By contrast, the GNU General Pu
+freedom to share and change it.  By contrast, the GNU General Public
+License is intended to guarantee y
