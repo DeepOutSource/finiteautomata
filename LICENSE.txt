@@ -12,4 +12,4 @@
 freedom to share and change it.  By contrast, the GNU General Public
 License is intended to guarantee your freedom to share and change free
 software--to make sure the software is free for all its users.  This
-General Public License
+General Public License applies to most of the Free Software
