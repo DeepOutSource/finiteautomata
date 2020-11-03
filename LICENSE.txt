@@ -19,4 +19,4 @@ the GNU Lesser General Public License instead.)  You can apply it to
 your programs, too.
 
   When we speak of free software, we are referring to freedom, not
-price.  Our General
+price.  Our General Public Licenses are designed to
