@@ -22,4 +22,4 @@ your programs, too.
 price.  Our General Public Licenses are designed to make sure that you
 have the freedom to distribute copies of free software (and charge for
 this service if you wish), that you receive source code or can get it
-if you want it, that you c
+if you want it, that you can change the software 
