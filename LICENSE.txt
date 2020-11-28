@@ -29,3 +29,5 @@ in new free programs; and that you know you can do these things.
 anyone to deny you these rights or to ask you to surrender the rights.
 These restrictions translate to certain responsibilities for you if you
 distribute copies of the software, or if you modify it.
+
+  For example, if you distr
