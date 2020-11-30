@@ -30,4 +30,5 @@ anyone to deny you these rights or to ask you to surrender the rights.
 These restrictions translate to certain responsibilities for you if you
 distribute copies of the software, or if you modify it.
 
-  For example, if you distribute copies of such a progra
+  For example, if you distribute copies of such a program, whether
+gratis or for a fee,
