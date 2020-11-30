@@ -31,4 +31,4 @@ These restrictions translate to certain responsibilities for you if you
 distribute copies of the software, or if you modify it.
 
   For example, if you distribute copies of such a program, whether
-gratis or for a fee,
+gratis or for a fee, you must give the recip
