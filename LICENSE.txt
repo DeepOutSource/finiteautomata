@@ -37,4 +37,4 @@ source code.  And you must show them these terms so they know their
 rights.
 
   We protect your rights with two steps: (1) copyright the software, and
-(2) offer you this license which 
+(2) offer you this license which gives you legal permission to co
