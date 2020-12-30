@@ -47,4 +47,4 @@ want its recipients to know that what they have is not the original, so
 that any problems introduced by others will not reflect on the original
 authors' reputations.
 
-  Finally, any free program
+  Finally, any free program is threatened constantly 
