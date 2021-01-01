@@ -48,4 +48,4 @@ that any problems introduced by others will not reflect on the original
 authors' reputations.
 
   Finally, any free program is threatened constantly by software
-patents.  We wish to avoid the danger t
+patents.  We wish to avoid the danger that redistributors of a fre
