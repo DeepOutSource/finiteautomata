@@ -49,4 +49,5 @@ authors' reputations.
 
   Finally, any free program is threatened constantly by software
 patents.  We wish to avoid the danger that redistributors of a free
-program will individually obtain patent licenses, in eff
+program will individually obtain patent licenses, in effect making the
+program pr
