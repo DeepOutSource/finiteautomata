@@ -54,4 +54,6 @@ program proprietary.  To prevent this, we have made it clear that any
 patent must be licensed for everyone's free use or not licensed at all.
 
   The precise terms and conditions for copying, distribution and
-modificat
+modification follow.
+
+           
