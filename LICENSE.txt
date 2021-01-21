@@ -57,4 +57,4 @@ patent must be licensed for everyone's free use or not licensed at all.
 modification follow.
 
                     GNU GENERAL PUBLIC LICENSE
-   TERMS AND CONDITIONS FOR
+   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND 
