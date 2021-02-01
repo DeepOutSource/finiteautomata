@@ -59,4 +59,4 @@ modification follow.
                     GNU GENERAL PUBLIC LICENSE
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
-  0. This Licens
+  0. This License applies to any pr
