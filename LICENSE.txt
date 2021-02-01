@@ -60,4 +60,4 @@ modification follow.
    TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
   0. This License applies to any program or other work which contains
-a notice placed b
+a notice placed by the copyright holder saying it may b
