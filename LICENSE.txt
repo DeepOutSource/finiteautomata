@@ -61,4 +61,4 @@ modification follow.
 
   0. This License applies to any program or other work which contains
 a notice placed by the copyright holder saying it may be distributed
-under the terms o
+under the terms of this General Public 
