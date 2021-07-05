@@ -71,4 +71,4 @@ the term "modification".)  Each licensee is addressed as "you".
 
 Activities other than copying, distribution and modification are not
 covered by this License; they are outside its scope.  The act of
-running the Prog
+running the Program is not restricted, an
