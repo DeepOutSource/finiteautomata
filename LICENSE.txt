@@ -73,4 +73,4 @@ Activities other than copying, distribution and modification are not
 covered by this License; they are outside its scope.  The act of
 running the Program is not restricted, and the output from the Program
 is covered only if its contents constitute a work based on the
-Program (independent of
+Program (independent of having been made by runnin
