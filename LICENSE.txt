@@ -77,4 +77,5 @@ Program (independent of having been made by running the Program).
 Whether that is true depends on what the Program does.
 
   1. You may copy and distribute verbatim copies of the Program's
-source code as you receive it, in any me
+source code as you receive it, in any medium, provided that you
+consp
