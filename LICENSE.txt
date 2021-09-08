@@ -80,4 +80,5 @@ Whether that is true depends on what the Program does.
 source code as you receive it, in any medium, provided that you
 conspicuously and appropriately publish on each copy an appropriate
 copyright notice and disclaimer of warranty; keep intact all the
-notices that refer to this License and to the ab
+notices that refer to this License and to the absence of any warranty;
+and
