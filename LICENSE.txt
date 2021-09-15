@@ -84,4 +84,5 @@ notices that refer to this License and to the absence of any warranty;
 and give any other recipients of the Program a copy of this License
 along with the Program.
 
-You may charge a fee for the physical act of t
+You may charge a fee for the physical act of transferring a copy, and
+you
