@@ -85,4 +85,4 @@ and give any other recipients of the Program a copy of this License
 along with the Program.
 
 You may charge a fee for the physical act of transferring a copy, and
-you
+you may at your option offer warrant
