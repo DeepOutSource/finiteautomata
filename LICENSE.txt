@@ -95,4 +95,4 @@ above, provided that you also meet all of these conditions:
     a) You must cause the modified files to carry prominent notices
     stating that you changed the files and the date of any change.
 
-    b) You must cause any work that you 
+    b) You must cause any work that you distribute or publish, that
