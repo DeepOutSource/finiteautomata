@@ -100,4 +100,4 @@ above, provided that you also meet all of these conditions:
     part thereof, to be licensed as a whole at no charge to all third
     parties under the terms of this License.
 
-    c) If the mo
+    c) If the modified program normally reads co
