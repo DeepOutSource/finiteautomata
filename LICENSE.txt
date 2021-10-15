@@ -101,4 +101,5 @@ above, provided that you also meet all of these conditions:
     parties under the terms of this License.
 
     c) If the modified program normally reads commands interactively
-    when run, you must cause it, when started running for s
+    when run, you must cause it, when started running for such
+    interactive use
