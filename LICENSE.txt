@@ -103,4 +103,5 @@ above, provided that you also meet all of these conditions:
     c) If the modified program normally reads commands interactively
     when run, you must cause it, when started running for such
     interactive use in the most ordinary way, to print or display an
-    announcement including an appropriate
+    announcement including an appropriate copyright notice and a
+    notice
