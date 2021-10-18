@@ -105,4 +105,4 @@ above, provided that you also meet all of these conditions:
     interactive use in the most ordinary way, to print or display an
     announcement including an appropriate copyright notice and a
     notice that there is no warranty (or else, saying that you provide
-    a warranty) a
+    a warranty) and that users may redistri
