@@ -106,4 +106,5 @@ above, provided that you also meet all of these conditions:
     announcement including an appropriate copyright notice and a
     notice that there is no warranty (or else, saying that you provide
     a warranty) and that users may redistribute the program under
-    these conditions, and telling the user 
+    these conditions, and telling the user how to view a copy of this
+ 
