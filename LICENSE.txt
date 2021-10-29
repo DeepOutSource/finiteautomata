@@ -108,4 +108,5 @@ above, provided that you also meet all of these conditions:
     a warranty) and that users may redistribute the program under
     these conditions, and telling the user how to view a copy of this
     License.  (Exception: if the Program itself is interactive but
-    does not normally print such an announcement, 
+    does not normally print such an announcement, your work based on
+    the P
