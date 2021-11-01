@@ -111,4 +111,5 @@ above, provided that you also meet all of these conditions:
     does not normally print such an announcement, your work based on
     the Program is not required to print an announcement.)
 
-These requirements apply to the
+These requirements apply to the modified work as a whole.  If
+iden
