@@ -112,4 +112,4 @@ above, provided that you also meet all of these conditions:
     the Program is not required to print an announcement.)
 
 These requirements apply to the modified work as a whole.  If
-iden
+identifiable sections of that work
