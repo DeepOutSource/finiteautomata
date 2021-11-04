@@ -112,4 +112,5 @@ above, provided that you also meet all of these conditions:
     the Program is not required to print an announcement.)
 
 These requirements apply to the modified work as a whole.  If
-identifiable sections of that work are not derived from the Pro
+identifiable sections of that work are not derived from the Program,
+and can be reaso
