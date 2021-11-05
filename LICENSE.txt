@@ -113,4 +113,4 @@ above, provided that you also meet all of these conditions:
 
 These requirements apply to the modified work as a whole.  If
 identifiable sections of that work are not derived from the Program,
-and can be reaso
+and can be reasonably considered independent and sep
