@@ -116,4 +116,4 @@ identifiable sections of that work are not derived from the Program,
 and can be reasonably considered independent and separate works in
 themselves, then this License, and its terms, do not apply to those
 sections when you distribute them as separate works.  But when you
-distribute
+distribute the same sections 
