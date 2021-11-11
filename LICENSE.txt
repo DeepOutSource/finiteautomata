@@ -117,4 +117,5 @@ and can be reasonably considered independent and separate works in
 themselves, then this License, and its terms, do not apply to those
 sections when you distribute them as separate works.  But when you
 distribute the same sections as part of a whole which is a work based
-on the Program, the distribution of the whole must be on 
+on the Program, the distribution of the whole must be on the terms of
+this Licen
