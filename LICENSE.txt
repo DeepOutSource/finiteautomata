@@ -121,4 +121,5 @@ on the Program, the distribution of the whole must be on the terms of
 this License, whose permissions for other licensees extend to the
 entire whole, and thus to each and every part regardless of who wrote it.
 
-Thus, it is not the intent of this section to claim rights or cont
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written en
