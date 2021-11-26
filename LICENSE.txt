@@ -124,4 +124,6 @@ entire whole, and thus to each and every part regardless of who wrote it.
 Thus, it is not the intent of this section to claim rights or contest
 your rights to work written entirely by you; rather, the intent is to
 exercise the right to control the distribution of derivative or
-collective works based on the Progr
+collective works based on the Program.
+
+In addition, mere aggregatio
