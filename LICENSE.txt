@@ -129,4 +129,6 @@ collective works based on the Program.
 In addition, mere aggregation of another work not based on the Program
 with the Program (or with a work based on the Program) on a volume of
 a storage or distribution medium does not bring the other work under
-the scope of 
+the scope of this License.
+
+  3. You may copy
