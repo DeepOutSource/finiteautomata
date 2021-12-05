@@ -135,3 +135,4 @@ the scope of this License.
 under Section 2) in object code or executable form under the terms of
 Sections 1 and 2 above provided that you also do one of the following:
 
+    a) Accompany it with
