@@ -141,4 +141,4 @@ Sections 1 and 2 above provided that you also do one of the following:
 
     b) Accompany it with a written offer, valid for at least three
     years, to give any third party, for a charge no more than your
-    cost of physically perfo
+    cost of physically performing source distribution, 
