@@ -157,4 +157,4 @@ making modifications to it.  For an executable work, complete source
 code means all the source code for all modules it contains, plus any
 associated interface definition files, plus the scripts used to
 control compilation and installation of the executable.  However, as a
-special exception
+special exception, the source code distribu
