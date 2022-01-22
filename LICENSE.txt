@@ -158,4 +158,4 @@ code means all the source code for all modules it contains, plus any
 associated interface definition files, plus the scripts used to
 control compilation and installation of the executable.  However, as a
 special exception, the source code distributed need not include
-anyt
+anything that is normally dist
