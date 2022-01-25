@@ -159,4 +159,4 @@ associated interface definition files, plus the scripts used to
 control compilation and installation of the executable.  However, as a
 special exception, the source code distributed need not include
 anything that is normally distributed (in either source or binary
-form) with the m
+form) with the major components (compiler, 
