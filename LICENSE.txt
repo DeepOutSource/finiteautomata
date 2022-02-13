@@ -161,4 +161,6 @@ special exception, the source code distributed need not include
 anything that is normally distributed (in either source or binary
 form) with the major components (compiler, kernel, and so on) of the
 operating system on which the executable runs, unless that component
-itself accompanies the
+itself accompanies the executable.
+
+If distribution 
