@@ -163,4 +163,5 @@ form) with the major components (compiler, kernel, and so on) of the
 operating system on which the executable runs, unless that component
 itself accompanies the executable.
 
-If distribution of executable or object co
+If distribution of executable or object code is made by offering
+access to c
