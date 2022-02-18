@@ -165,4 +165,4 @@ itself accompanies the executable.
 
 If distribution of executable or object code is made by offering
 access to copy from a designated place, then offering equivalent
-acce
+access to copy the source 
