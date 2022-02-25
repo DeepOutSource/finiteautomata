@@ -173,4 +173,4 @@ compelled to copy the source along with the object code.
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
 void, and will automatically terminate your rights under this License.
-However, parties wh
+However, parties who have received copies, 
