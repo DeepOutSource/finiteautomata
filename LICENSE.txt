@@ -172,4 +172,5 @@ compelled to copy the source along with the object code.
   4. You may not copy, modify, sublicense, or distribute the Program
 except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
-void, and will automatically terminate your rights under thi
+void, and will automatically terminate your rights under this License.
+However, parties wh
