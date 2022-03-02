@@ -174,4 +174,4 @@ except as expressly provided under this License.  Any attempt
 otherwise to copy, modify, sublicense or distribute the Program is
 void, and will automatically terminate your rights under this License.
 However, parties who have received copies, or rights, from you under
-this License will not 
+this License will not have their licenses terminated so
