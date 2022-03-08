@@ -178,4 +178,4 @@ this License will not have their licenses terminated so long as such
 parties remain in full compliance.
 
   5. You are not required to accept this License, since you have not
-signed it.  
+signed it.  However, nothing else grant
