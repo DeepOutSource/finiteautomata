@@ -188,4 +188,4 @@ the Program or works based on it.
 
   6. Each time you redistribute the Program (or any work based on the
 Program), the recipient automatically receives a license from the
-or
+original licensor to copy, distribu
