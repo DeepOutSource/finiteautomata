@@ -190,4 +190,4 @@ the Program or works based on it.
 Program), the recipient automatically receives a license from the
 original licensor to copy, distribute or modify the Program subject to
 these terms and conditions.  You may not impose any further
-restrictions on the recipients' exerc
+restrictions on the recipients' exercise of the rights granted herein.
