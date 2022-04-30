@@ -198,4 +198,4 @@ this License.
 infringement or for any other reason (not limited to patent issues),
 conditions are imposed on you (whether by court order, agreement or
 otherwise) that contradict the conditions of this License, they do not
-e
+excuse you from the cond
