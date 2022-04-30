@@ -197,4 +197,4 @@ this License.
   7. If, as a consequence of a court judgment or allegation of patent
 infringement or for any other reason (not limited to patent issues),
 conditions are imposed on you (whether by court order, agreement or
-otherwise) t
+otherwise) that contradict the cond
