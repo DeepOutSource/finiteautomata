@@ -202,4 +202,5 @@ excuse you from the conditions of this License.  If you cannot
 distribute so as to satisfy simultaneously your obligations under this
 License and any other pertinent obligations, then as a consequence you
 may not distribute the Program at all.  For example, if a patent
-license would not permit royalty-free redistribution of the Prog
+license would not permit royalty-free redistribution of the Program by
+all those who rece
