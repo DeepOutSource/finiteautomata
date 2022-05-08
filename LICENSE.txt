@@ -203,4 +203,4 @@ distribute so as to satisfy simultaneously your obligations under this
 License and any other pertinent obligations, then as a consequence you
 may not distribute the Program at all.  For example, if a patent
 license would not permit royalty-free redistribution of the Program by
-all those who rece
+all those who receive copies directly or indirectl
