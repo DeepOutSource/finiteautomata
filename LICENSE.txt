@@ -208,4 +208,4 @@ the only way you could satisfy both it and this License would be to
 refrain entirely from distribution of the Program.
 
 If any portion of this section is held invalid or unenforceable under
-any particula
+any particular circumstance, the balance of t
