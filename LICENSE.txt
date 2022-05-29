@@ -209,4 +209,7 @@ refrain entirely from distribution of the Program.
 
 If any portion of this section is held invalid or unenforceable under
 any particular circumstance, the balance of the section is intended to
-apply and the section as a whole is intended to apply in
+apply and the section as a whole is intended to apply in other
+circumstances.
+
+It is 
