@@ -213,4 +213,5 @@ apply and the section as a whole is intended to apply in other
 circumstances.
 
 It is not the purpose of this section to induce you to infringe any
-patents or other property right claims or to contest validity of 
+patents or other property right claims or to contest validity of any
+such claims; this sect
