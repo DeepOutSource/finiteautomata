@@ -215,4 +215,5 @@ circumstances.
 It is not the purpose of this section to induce you to infringe any
 patents or other property right claims or to contest validity of any
 such claims; this section has the sole purpose of protecting the
-integrity of the free software distributi
+integrity of the free software distribution system, which is
+implemented by 
