@@ -217,4 +217,4 @@ patents or other property right claims or to contest validity of any
 such claims; this section has the sole purpose of protecting the
 integrity of the free software distribution system, which is
 implemented by public license practices.  Many people have made
-generous contributions 
+generous contributions to the wide range of softwar
