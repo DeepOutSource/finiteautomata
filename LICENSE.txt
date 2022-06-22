@@ -224,4 +224,6 @@ to distribute software through any other system and a licensee cannot
 impose that choice.
 
 This section is intended to make thoroughly clear what is believed to
-be a consequence of the rest of thi
+be a consequence of the rest of this License.
+
+  8. If the
