@@ -226,4 +226,5 @@ impose that choice.
 This section is intended to make thoroughly clear what is believed to
 be a consequence of the rest of this License.
 
-  8. If the distribution and/or use of the Program is restricte
+  8. If the distribution and/or use of the Program is restricted in
+certain countries either 
