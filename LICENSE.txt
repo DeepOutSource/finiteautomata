@@ -230,4 +230,4 @@ be a consequence of the rest of this License.
 certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
 may add an explicit geographical distribution limitation excluding
-those countries, so that 
+those countries, so that distribution is permitted only i
