@@ -231,4 +231,5 @@ certain countries either by patents or by copyrighted interfaces, the
 original copyright holder who places the Program under this License
 may add an explicit geographical distribution limitation excluding
 those countries, so that distribution is permitted only in or among
-countries not thus excluded.  In such case
+countries not thus excluded.  In such case, this License incorporates
+the
