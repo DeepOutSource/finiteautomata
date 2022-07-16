@@ -232,4 +232,6 @@ original copyright holder who places the Program under this License
 may add an explicit geographical distribution limitation excluding
 those countries, so that distribution is permitted only in or among
 countries not thus excluded.  In such case, this License incorporates
-the limitation as if written in the body of this Li
+the limitation as if written in the body of this License.
+
+  9. The Free Software
