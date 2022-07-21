@@ -235,4 +235,4 @@ countries not thus excluded.  In such case, this License incorporates
 the limitation as if written in the body of this License.
 
   9. The Free Software Foundation may publish revised and/or new versions
-of the General Public Lice
+of the General Public License from time to time.  Such
