@@ -241,4 +241,4 @@ address new problems or concerns.
 
 Each version is given a distinguishing version number.  If the Program
 specifies a version number of this License which applies to it and "any
-later version", you have the option of follo
+later version", you have the option of following the terms and conditions
