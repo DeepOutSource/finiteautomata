@@ -247,4 +247,5 @@ Software Foundation.  If the Program does not specify a version number of
 this License, you may choose any version ever published by the Free Software
 Foundation.
 
-  10. If you wish to incorporate parts of the Progr
+  10. If you wish to incorporate parts of the Program into other free
+programs
