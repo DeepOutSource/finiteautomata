@@ -250,3 +250,4 @@ Foundation.
   10. If you wish to incorporate parts of the Program into other free
 programs whose distribution conditions are different, write to the author
 to ask for permission.  For software which is copyrighted by the Free
+Software Foundation, write to the F
