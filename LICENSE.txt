@@ -251,4 +251,4 @@ Foundation.
 programs whose distribution conditions are different, write to the author
 to ask for permission.  For software which is copyrighted by the Free
 Software Foundation, write to the Free Software Foundation; we sometimes
-make exceptions fo
+make exceptions for this.  Our decision will be guide
