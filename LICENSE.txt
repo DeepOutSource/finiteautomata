@@ -257,4 +257,4 @@ of promoting the sharing and reuse of software generally.
 
                             NO WARRANTY
 
-  11. BECAUSE THE PROGRAM IS LICENSED F
+  11. BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO 
