@@ -281,4 +281,4 @@ POSSIBILITY OF SUCH DAMAGES.
 
             How to Apply These Terms to Your New Programs
 
-  If you develop a new progra
+  If you develop a new program, and you want 
