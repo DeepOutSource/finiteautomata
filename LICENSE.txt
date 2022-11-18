@@ -285,4 +285,4 @@ POSSIBILITY OF SUCH DAMAGES.
 possible use to the public, the best way to achieve this is to make it
 free software which everyone can redistribute and change under these terms.
 
-  To do so, attach the following noti
+  To do so, attach the following notices to the program.  It is saf
