@@ -309,4 +309,4 @@ the "copyright" line and a pointer to where the full notice is found.
 
 Also add information on how to contact you by electronic and paper mail.
 
-If the program is intera
+If the program is interactive, make it output a sho
