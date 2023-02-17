@@ -313,4 +313,4 @@ If the program is interactive, make it output a short notice like this
 when it starts in an interactive mode:
 
     Gnomovision version 69, Copyright (C) year name of author
-    Gnomovision comes with ABSOLUTELY NO WA
+    Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type `
