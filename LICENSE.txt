@@ -317,4 +317,4 @@ when it starts in an interactive mode:
     This is free software, and you are welcome to redistribute it
     under certain conditions; type `show c' for details.
 
-The hypothetical commands 
+The hypothetical commands `show w' and `show c' sh
