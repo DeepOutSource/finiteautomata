@@ -319,4 +319,4 @@ when it starts in an interactive mode:
 
 The hypothetical commands `show w' and `show c' should show the appropriate
 parts of the General Public License.  Of course, the commands you use may
-be called somethi
+be called something other than `show w' and `
