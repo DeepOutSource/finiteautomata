@@ -322,4 +322,4 @@ parts of the General Public License.  Of course, the commands you use may
 be called something other than `show w' and `show c'; they could even be
 mouse-clicks or menu items--whatever suits your program.
 
-You shoul
+You should also get your employer (if you
