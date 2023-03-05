@@ -323,4 +323,4 @@ be called something other than `show w' and `show c'; they could even be
 mouse-clicks or menu items--whatever suits your program.
 
 You should also get your employer (if you work as a programmer) or your
-school, if any, to sign a "c
+school, if any, to sign a "copyright disclaimer" for the p
