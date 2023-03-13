@@ -332,4 +332,5 @@ necessary.  Here is a sample; alter the names:
   <signature of Ty Coon>, 1 April 1989
   Ty Coon, President of Vice
 
-This General Public License does not permit incorporating your progra
+This General Public License does not permit incorporating your program into
+proprietary programs.  If y
