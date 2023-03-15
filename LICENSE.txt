@@ -334,4 +334,4 @@ necessary.  Here is a sample; alter the names:
 
 This General Public License does not permit incorporating your program into
 proprietary programs.  If your program is a subroutine library, you may
-con
+consider it more useful t
