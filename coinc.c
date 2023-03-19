@@ -63,3 +63,31 @@ void insert_blank_event(event *event) {
 }
 
 monitor_t *init_monitor(char *filename) {
+    monitor_t *mon=malloc(sizeof(monitor_t));
+    mon->f=fopen(filename, "r");
+    if(!mon->f) {
+        free(mon);
+        return NULL;
+    }
+    mon->last_event.adc=0;
+    mon->last_event.channel=0;
+    mon->last_event.timestamp=0;
+    mon->sum=0;
+    return mon;
+}
+
+int advance_monitorfile_until_timestamp(monitor_t *mon, unsigned long long int ts) {
+    while(ts > mon->last_event.timestamp) { /* This will actually go one too far (how else are we going to know when to stop? */
+        if(fscanf(mon->f,"%i %i %llu\n",&(mon->last_event.adc), &(mon->last_event.channel), &(mon->last_event.timestamp)) == 3) {
+            mon->sum++;
+        } else {
+            return (mon->sum-1);
+        }
+    }
+    return (mon->sum-1);
+}
+
+
+int read_event_from_file(FILE *file, event *event, int n_adcs) {
+    if(fscanf(file,"%i %i %llu\n",&event->adc, &event->channel, &event->timestamp) == 3) {
+        if(event->adc < n_adcs && event->adc>=0) {
