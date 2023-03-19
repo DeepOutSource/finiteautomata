@@ -42,3 +42,24 @@ struct list_event {
 typedef struct list_event event;
 
 typedef enum OUTPUT_MODE_E {
+	MODE_RAW = 0,
+    MODE_TIMESTAMPS = 1,
+    MODE_TIME_AND_CHANNEL = 2,
+    MODE_TIMEDIFF_AND_CHANNEL = 3
+} output_mode;
+
+struct monitor {
+   FILE *f;
+   event last_event;
+   unsigned int sum;
+};
+
+typedef struct monitor monitor_t;
+
+void insert_blank_event(event *event) {
+    event->adc=N_ADCS_MAX-1;
+    event->channel=-1;
+    event->timestamp=0;
+}
+
+monitor_t *init_monitor(char *filename) {
