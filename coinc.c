@@ -91,3 +91,32 @@ int advance_monitorfile_until_timestamp(monitor_t *mon, unsigned long long int t
 int read_event_from_file(FILE *file, event *event, int n_adcs) {
     if(fscanf(file,"%i %i %llu\n",&event->adc, &event->channel, &event->timestamp) == 3) {
         if(event->adc < n_adcs && event->adc>=0) {
+            return 1;
+        } else {
+            fprintf(stderr, "ADC value %u too high or negative, aborting. Check input file or try increasing number of ADCs (currently %i).\n", event->adc, n_adcs);
+            return 0;
+        }
+
+    } else {
+		if(!feof(file)) {
+			fprintf(stderr, "\nError in input data.\n");
+		}
+		return 0;
+	}
+}
+
+int find_percentile(double percentile, unsigned int *histogram, int low, int high) {
+    unsigned int integral=0;
+    int i, i_max=high-low;
+    unsigned int stop=0;
+    for(i=0; i<=i_max; i++) {
+        integral += histogram[i];
+    }
+    stop=(unsigned int) (percentile*integral*1.0);
+    integral=0;
+    for(i=0; i<=i_max; i++) {
+        integral += histogram[i];
+        if(integral >= stop)
+            return (i+low);
+    }
+    return (low-1);
