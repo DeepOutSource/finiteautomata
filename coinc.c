@@ -120,3 +120,41 @@ int find_percentile(double percentile, unsigned int *histogram, int low, int hig
             return (i+low);
     }
     return (low-1);
+}
+
+int main (int argc, char **argv) {
+    unsigned int i=0;
+    unsigned int j=0,k=0;
+    unsigned int coinc_table_size=COINC_TABLE_SIZE_DEFAULT, coinc_table_size_argument;
+    unsigned int coincs_found=0;
+    unsigned int lines_read=0;
+    int trigger_adc=TRIGGER_ADC_DEFAULT,trigger_adc_argument;
+	unsigned int n_adcs_argument=0,n_adcs=N_ADCS_DEFAULT;
+	int require_argument;
+    int adc;
+	unsigned int adcs_in_coinc;
+	output_mode output_mode=MODE_RAW;
+    int triggertime=0;
+	int *coinc_events, *n_adc_events, *n_coinc_adc_events;
+	long long int time_difference;
+    long long int *time_window_high=malloc(N_ADCS_MAX*sizeof(long long int));
+	long long int *time_window_low=malloc(N_ADCS_MAX*sizeof(long long int));
+    long long int time_window_argument=0;
+    int *require = (int *)malloc(N_ADCS_MAX*(sizeof(int)));
+    int all_required_found;
+    int min_multiplicity=MIN_MULTIPLICITY_DEFAULT;
+    int adc_argument=0;
+	int endgame=0;
+	int skip_lines_argument=0,skip_lines=SKIP_LINES_DEFAULT;
+    int output_n_events=0;
+    monitor_t *monitor=NULL;
+    char *monitorfilename=calloc(256, sizeof(char));
+	char buffer[100];
+	event *coinc_table;
+
+    FILE *read_file=stdin;
+	FILE *output_file=stdout;
+    unsigned int **timediff_histogram;
+
+
+    if(argc==1) {
