@@ -187,3 +187,30 @@ int main (int argc, char **argv) {
         }
         if(sscanf(argv[i], "--monitor=%200s", monitorfilename)==1) {
             if(verbose) fprintf(stderr, "Using file %s for monitor data\n", monitorfilename);
+            monitor=init_monitor(monitorfilename);
+            if(!monitor) {
+                fprintf(stderr, "Could not open file %s! Monitor data ignored\n", monitorfilename);
+            }
+            continue;
+        }
+
+        if(strcmp(argv[i], "--silent")==0) {
+            silent=1;
+            continue;
+        }
+        if(strcmp(argv[i], "--both")==0) {
+            output_mode=MODE_TIME_AND_CHANNEL;
+            if(verbose) fprintf(stderr, "Outputting both channel and timestamp values.\n");
+            continue;
+        }
+        if(strcmp(argv[i], "--timediff")==0) {
+            output_mode=MODE_TIMEDIFF_AND_CHANNEL;
+            if(verbose) fprintf(stderr, "Outputting both channel and time diff to trigger time.\n");
+            continue;
+        }
+
+		if(sscanf(argv[i], "--skip=%u", &skip_lines_argument)==1) {
+			skip_lines=skip_lines_argument;
+			if(verbose) fprintf(stderr, "Skipping first %u lines of input file...\n", skip_lines); 
+			continue;
+		}
