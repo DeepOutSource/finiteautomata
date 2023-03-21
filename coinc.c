@@ -158,3 +158,32 @@ int main (int argc, char **argv) {
 
 
     if(argc==1) {
+        fprintf(stderr, "coinc %s\n", coinc_VERSION);
+		fprintf(stderr, HELP_TEXT, argv[0]);
+    	fprintf(stderr, LICENCE_TEXT);
+		return 0;
+	}
+    for(i=0; i<N_ADCS_MAX; i++) {
+        time_window_low[i]=TIMING_WINDOW_LOW_DEFAULT;
+        time_window_high[i]=TIMING_WINDOW_HIGH_DEFAULT;
+        require[i]=0;
+    }
+	for(i=1; i<(unsigned int)argc; i++) {
+		if(verbose) fprintf(stderr, "Scanning argument no %i/%i (\"%s\")...\n", i, argc-1, argv[i]);
+		if(strcmp(argv[i], "--verbose")==0) {
+			fprintf(stderr, "Verbose output mode active.\n");
+			verbose=1;
+			continue;
+		}
+        if(strcmp(argv[i], "--timestamps")==0) {
+            output_mode=MODE_TIMESTAMPS;
+            if(verbose) fprintf(stderr, "Outputting timestamp values.\n");
+            continue;
+        }
+        if(strcmp(argv[i], "--triggertime")==0) {
+            triggertime=1;
+            if(verbose) fprintf(stderr, "Outputting also trigger timestamp (first column)\n");
+            continue;
+        }
+        if(sscanf(argv[i], "--monitor=%200s", monitorfilename)==1) {
+            if(verbose) fprintf(stderr, "Using file %s for monitor data\n", monitorfilename);
