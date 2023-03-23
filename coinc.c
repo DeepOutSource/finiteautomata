@@ -214,3 +214,24 @@ int main (int argc, char **argv) {
 			if(verbose) fprintf(stderr, "Skipping first %u lines of input file...\n", skip_lines); 
 			continue;
 		}
+		if(sscanf(argv[i], "--nadc=%u", &n_adcs_argument)==1) {
+			if(n_adcs_argument > 1 && n_adcs_argument < N_ADCS_MAX-1) {
+				if (verbose) {
+					fprintf(stderr, "Number of ADCs set to be %u\n", n_adcs_argument);
+				}
+				n_adcs=n_adcs_argument;
+			} else {
+				fprintf(stderr, "Number of ADCs must be higher than 1 but lower than %i!\n", N_ADCS_MAX-1);
+				return 0;
+			}
+			continue;
+		}
+		if(sscanf(argv[i], "--tablesize=%u", &coinc_table_size_argument)==1) {
+			if(coinc_table_size_argument>1) {
+				coinc_table_size=coinc_table_size_argument;
+				if(verbose) {
+					fprintf(stderr, "Coinc table size set to be %u\n", coinc_table_size_argument);
+				}
+			} else {
+				fprintf(stderr, "Coinc table size must be larger than 1!\n");
+				return 0;
