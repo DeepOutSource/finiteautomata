@@ -284,3 +284,32 @@ int main (int argc, char **argv) {
             }
             continue;
         }
+
+        if(sscanf(argv[i], "--nevents=%i", &output_n_events)==1) {
+            if(output_n_events < 0) {
+                output_n_events=0;
+            }
+            continue;
+        }
+        if(sscanf(argv[i], "--require=%i", &require_argument)) {
+            if(require_argument >=0 && require_argument < n_adcs) {
+                require[require_argument]=1;
+            }
+            continue;
+        }
+        if(sscanf(argv[i], "--multiplicity=%i", &min_multiplicity)) {
+            if(min_multiplicity < 0 || min_multiplicity >= n_adcs) {
+                fprintf(stderr, "Consider changing your multiplicity. This doesn't make much sense.\n");
+            }
+            continue;
+        }
+
+		if(strcmp(argv[i], "--")==0) {
+			fprintf(stderr, "Unrecognized option \"%s\"\n", argv[i]);
+			return 0;
+		}
+        if(strcmp(argv[i], "-")==0) {
+            if(read_file!=stdin) {
+                read_file=stdin;
+            } else {
+                output_file=stdout;
