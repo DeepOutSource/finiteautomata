@@ -313,3 +313,32 @@ int main (int argc, char **argv) {
                 read_file=stdin;
             } else {
                 output_file=stdout;
+            }
+            continue;
+        }
+
+		if(read_file != stdin) { /* Reading from file already, this parameter must be output filename */
+			if(verbose) fprintf(stderr, "Assuming argument no %i \"%s\" is output filename\n",i,argv[i]); 
+			fflush(stderr);
+			output_file=fopen(argv[i], "w");
+			if(!output_file) {
+				fprintf(stderr, "Could not open file \"%s\" for output.\n", argv[i]);
+				return 0;
+			}
+		} else { /* This parameter is interpret as input filename */
+			if(verbose) fprintf(stderr, "Assuming argument no %i \"%s\" is input filename\n",i,argv[i]);
+			fflush(stderr);
+			read_file=fopen(argv[i],"r");
+			if(!read_file) {
+				fprintf(stderr, "Could not open file \"%s\" for input.\n", argv[i]);
+				return 0;
+			}
+		}
+		
+ 	}
+
+
+	if(trigger_adc >= n_adcs) {
+		fprintf(stderr, "Number of ADCS set too low or trigger ADC number is too high!\n");
+		return 0;
+	}
