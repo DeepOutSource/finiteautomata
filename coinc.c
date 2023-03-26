@@ -256,3 +256,31 @@ int main (int argc, char **argv) {
 		}
         if(sscanf(argv[i], "--low=%lli", &time_window_argument)==1) {
             if(verbose) {
+                fprintf(stderr, "Set low value %lli for all adcs\n", time_window_argument);
+            }
+            for(adc=0; adc<n_adcs; adc++) {
+                time_window_low[adc]=time_window_argument;
+            }
+            continue;
+        }
+        
+        if(sscanf(argv[i], "--high=%i,%lli", &adc_argument, &time_window_argument)==2) {
+            if(verbose) {
+                fprintf(stderr, "Set high value %lli for adc %i\n", time_window_argument, adc_argument);
+            }
+            if(adc_argument < 0 || adc_argument >= n_adcs) {
+                fprintf(stderr, "ADC number %i too high or negative (in --high=%i,%lli)\n", adc_argument,  adc_argument, time_window_argument);
+            }            
+            time_window_high[adc_argument]=time_window_argument;
+            continue;
+		}
+
+        if(sscanf(argv[i], "--high=%lli", &time_window_argument)==1) {
+            if(verbose) {
+                fprintf(stderr, "Set high value %lli for all adcs\n", time_window_argument);
+            }
+            for(adc=0; adc<n_adcs; adc++) {
+                time_window_high[adc]=time_window_argument;
+            }
+            continue;
+        }
