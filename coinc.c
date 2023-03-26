@@ -235,3 +235,24 @@ int main (int argc, char **argv) {
 			} else {
 				fprintf(stderr, "Coinc table size must be larger than 1!\n");
 				return 0;
+			}
+            continue;
+		}
+		
+		if(sscanf(argv[i], "--trigger=%u", &trigger_adc_argument)==1) {
+			trigger_adc=trigger_adc_argument;
+            continue;
+		}
+        
+        if(sscanf(argv[i],"--low=%i,%lli", &adc_argument, &time_window_argument)==2) {
+            if(verbose) {
+                fprintf(stderr, "Set low value %lli for adc %i\n", time_window_argument, adc_argument);
+            }
+            if(adc_argument < 0 || adc_argument >= n_adcs) {
+                fprintf(stderr, "ADC number %i too high or negative (in --low=%i,%lli)\n", adc_argument, adc_argument, time_window_argument);
+            }
+			time_window_low[adc_argument]=time_window_argument;
+            continue;
+		}
+        if(sscanf(argv[i], "--low=%lli", &time_window_argument)==1) {
+            if(verbose) {
