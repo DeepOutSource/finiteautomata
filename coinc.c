@@ -342,3 +342,38 @@ int main (int argc, char **argv) {
 		fprintf(stderr, "Number of ADCS set too low or trigger ADC number is too high!\n");
 		return 0;
 	}
+	
+    time_window_low[trigger_adc]=0;
+    time_window_high[trigger_adc]=0;
+
+	if(verbose) {
+		fprintf(stderr, "OPTIONS:\n\tverbose=%i\n\toutput_mode=%i\n\tskip_lines=%i\n\tn_adcs=%i\n\tcoinc_table_size=%u\n\tmin_multiplicity=%i\n\n", verbose, output_mode, skip_lines, n_adcs, coinc_table_size, min_multiplicity);
+	    fprintf(stderr, "\tADC\tlow\thigh\trequire?\n");
+        for(adc=0; adc < n_adcs; adc++) {
+	        fprintf(stderr, "\t%i\t%lli\t%lli\t%s\n", adc, time_window_low[adc], time_window_high[adc], adc==trigger_adc?"Yes, trigger":(require[adc]?"Yes":"No"));
+        }
+    }
+	skip_lines++;
+	while(skip_lines--) {
+		if(!fgets(buffer, 100, read_file)) {
+			fprintf(stderr, "Can't skip more lines than there are in the input!\n");
+			return 0;
+		}
+	}
+    if(!read_file) {
+        fprintf(stderr, "Error: input file could not be read.\n");
+        return 0;
+    }
+	if(verbose) {
+        fprintf(stderr, "Allocating %i adcs and a coinc table of %i events.\n", n_adcs, coinc_table_size);
+    }
+    coinc_table  = (event *)malloc(coinc_table_size*(sizeof(event)));	
+	coinc_events = (int *)malloc(n_adcs*(sizeof(int)));
+	n_adc_events = (int *)malloc(n_adcs*(sizeof(int)));
+	n_coinc_adc_events = (int *)malloc(n_adcs*(sizeof(int)));
+    timediff_histogram = (unsigned int **)malloc(n_adcs*(sizeof(unsigned int *)));
+    for(adc=0; adc < n_adcs; adc++) {
+		n_adc_events[adc]= 0; 
+		n_coinc_adc_events[adc]= 0; 
+        timediff_histogram[adc] = (unsigned int *)calloc(time_window_high[adc]-time_window_low[adc]+1, sizeof(unsigned int));
+	}
