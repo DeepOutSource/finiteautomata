@@ -377,3 +377,25 @@ int main (int argc, char **argv) {
 		n_coinc_adc_events[adc]= 0; 
         timediff_histogram[adc] = (unsigned int *)calloc(time_window_high[adc]-time_window_low[adc]+1, sizeof(unsigned int));
 	}
+
+
+	for(i=0; i < coinc_table_size; i++) {
+        insert_blank_event(&coinc_table[i]);
+    }
+    for(i=coinc_table_size/2; i < coinc_table_size; i++) {
+        if(read_event_from_file(read_file, &coinc_table[i], n_adcs)) {
+			lines_read++;
+			n_adc_events[coinc_table[i].adc]++; 
+		} else {
+			coinc_table_size=i;
+		}
+
+    }
+
+    i=coinc_table_size/2;
+
+	while(coinc_table_size > 1) {
+        if(((!(lines_read%1000)) || endgame) && !silent) {
+            fprintf(stderr,"%10u LINES READ: %10u coincs\r", lines_read, coincs_found);
+        }
+        
