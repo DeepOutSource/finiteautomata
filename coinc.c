@@ -422,3 +422,27 @@ int main (int argc, char **argv) {
                     }
                 }
 			}
+			if(adcs_in_coinc >= min_multiplicity && all_required_found) {
+                if(triggertime) {
+                    fprintf(output_file, "%13llu ", coinc_table[coinc_events[trigger_adc]].timestamp);
+                }
+                if(monitor) {
+                    fprintf(output_file, "%7i ", advance_monitorfile_until_timestamp(monitor, coinc_table[coinc_events[trigger_adc]].timestamp));
+                }
+
+				for (adc=0; adc < n_adcs; adc++) {
+                    if(coinc_events[adc] != -1) {
+                        if(adc != trigger_adc) {
+                            time_difference=coinc_table[coinc_events[adc]].timestamp-coinc_table[coinc_events[trigger_adc]].timestamp;
+                            if(time_difference < time_window_low[adc]) {
+                                fprintf(stderr, "Time difference too low! ADC=%i, triggering adc=%i, time diff %lli\n. This should be impossible!\n", adc, trigger_adc, time_difference);
+                            }
+                            if(time_difference > time_window_high[adc]) {
+                                fprintf(stderr, "Time difference too high! ADC=%i, triggering adc=%i, time diff %lli\n. This should be impossible!\n", adc, trigger_adc, time_difference);
+                            }
+                            timediff_histogram[adc][time_difference-time_window_low[adc]]++;
+                        } else {
+                            time_difference=0;
+                        }
+                        n_coinc_adc_events[adc]++;
+						switch (output_mode) {
