@@ -399,3 +399,26 @@ int main (int argc, char **argv) {
             fprintf(stderr,"%10u LINES READ: %10u coincs\r", lines_read, coincs_found);
         }
         
+        if(coinc_table[i].adc == trigger_adc) {
+			adcs_in_coinc=0;
+            all_required_found=1; /* This will be set to zero later, if false */
+			for(adc=0; adc < n_adcs; adc++) {
+				coinc_events[adc]= -1; 
+			}
+			coinc_events[trigger_adc]=i;
+			for(j=1; j<coinc_table_size; j++) {
+				k=(i+j)%coinc_table_size;
+				time_difference=coinc_table[k].timestamp-coinc_table[i].timestamp;
+				if(time_difference >= time_window_low[coinc_table[k].adc] && time_difference <= time_window_high[coinc_table[k].adc] && coinc_table[k].adc!=trigger_adc  && i != k && coinc_table[k].adc != N_ADCS_MAX-1) { /* Conditions for coincidence met */
+				    coinc_events[coinc_table[k].adc]=k;
+                }
+            }
+			for(adc=0; adc < n_adcs; adc++) {
+				if (coinc_events[adc] != -1) { /* There is an event for this ADC */
+					adcs_in_coinc++;
+    			} else { /* There isn't */
+                    if(require[adc]) {
+                        all_required_found=0;
+                    }
+                }
+			}
