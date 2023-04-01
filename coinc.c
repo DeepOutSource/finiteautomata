@@ -446,3 +446,28 @@ int main (int argc, char **argv) {
                         }
                         n_coinc_adc_events[adc]++;
 						switch (output_mode) {
+							case MODE_RAW:
+								fprintf(output_file, "%5i ", coinc_table[coinc_events[adc]].channel);
+								break;
+                            case MODE_TIMESTAMPS:
+                                fprintf(output_file, "%13llu ", coinc_table[coinc_events[adc]].timestamp);
+                                break;
+                            case MODE_TIMEDIFF_AND_CHANNEL:
+                                fprintf(output_file, "%5i %7lli ", coinc_table[coinc_events[adc]].channel, time_difference);
+							    break;
+                            case MODE_TIME_AND_CHANNEL:
+                                fprintf(output_file, "%5i %13llu ",coinc_table[coinc_events[adc]].channel, coinc_table[coinc_events[adc]].timestamp);
+                                break;
+                            default:
+								break;
+						}
+
+					} else {
+                        switch (output_mode) {
+                            case MODE_TIME_AND_CHANNEL:
+                                fprintf(output_file, "    0             0 ");
+                                break;
+                            case MODE_TIMEDIFF_AND_CHANNEL:
+                                fprintf(output_file, "    0       0 ");
+                                break;
+                            case MODE_TIMESTAMPS:
