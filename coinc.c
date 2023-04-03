@@ -491,3 +491,26 @@ int main (int argc, char **argv) {
         if(endgame) {
             if(endgame==(int)coinc_table_size) {break;}
             endgame++;
+            insert_blank_event(&coinc_table[(i+coinc_table_size/2)%coinc_table_size]);
+        } else {
+            if(read_event_from_file(read_file, &coinc_table[(i+coinc_table_size/2)%coinc_table_size], n_adcs)) {
+                lines_read++;
+                n_adc_events[coinc_table[(i+coinc_table_size/2)%coinc_table_size].adc]++;
+            } else {     
+                endgame=1;
+				if(verbose) fprintf(stderr, "\nEntering endgame (not reading input anymore)\n");
+			}
+        }
+
+        i++;
+        if(i==coinc_table_size) {
+            i=0;
+        }
+    }
+    if(!silent) {
+    	fprintf(stderr,"%10u LINES READ: %10u coincs\nDone.\n", lines_read, coincs_found);
+/*        if(monitor) {
+            fprintf(stderr, "Total %i monitor counts in monitor file.", advance_monitorfile_until_timestamp(monitor, ULONG_MAX)+1);
+        } */
+        fprintf(stderr, "--------------------------------------------------------------------\n");
+        fprintf(stderr, "ADC     Total  In coinc   %% of   %% of     1%%      5%%     95%%     99%%\n");
