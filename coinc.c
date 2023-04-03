@@ -514,3 +514,21 @@ int main (int argc, char **argv) {
         } */
         fprintf(stderr, "--------------------------------------------------------------------\n");
         fprintf(stderr, "ADC     Total  In coinc   %% of   %% of     1%%      5%%     95%%     99%%\n");
+        fprintf(stderr, "                         these coincs  limit   limit   limit   limit\n");
+        fprintf(stderr, "--------------------------------------------------------------------\n");
+
+	    for(adc=0; adc < n_adcs; adc++) {
+            if(n_adc_events[adc]) {
+    		    fprintf(stderr, "%3i %9i %9i %5.1f%% %5.1f%%", adc, n_adc_events[adc], n_coinc_adc_events[adc], n_coinc_adc_events[adc]/(0.01*n_adc_events[adc]), n_coinc_adc_events[adc]/(0.01*n_coinc_adc_events[trigger_adc]));
+                fprintf(stderr, "%7i %7i %7i %7i\n", 
+                    find_percentile(0.01, timediff_histogram[adc], time_window_low[adc], time_window_high[adc]),
+                    find_percentile(0.05, timediff_histogram[adc], time_window_low[adc], time_window_high[adc]),
+                    find_percentile(0.95, timediff_histogram[adc], time_window_low[adc], time_window_high[adc]), 
+                    find_percentile(0.99, timediff_histogram[adc], time_window_low[adc], time_window_high[adc])
+                );
+            }
+	    }
+        fprintf(stderr, "--------------------------------------------------------------------\n");
+    }
+    return 1;
+}

@@ -1,0 +1,3 @@
+
+#define coinc_VERSION "@coinc_VERSION@"
+#define coinc_DESCRIPTION "@coinc_DESCRIPTION@"
