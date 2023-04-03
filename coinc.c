@@ -471,3 +471,23 @@ int main (int argc, char **argv) {
                                 fprintf(output_file, "    0       0 ");
                                 break;
                             case MODE_TIMESTAMPS:
+                                fprintf(output_file, "             0 ");
+                                break;
+                            default:
+						        fprintf(output_file, "     0 ");
+                                break;
+                            }
+					}
+
+				}
+                fprintf(output_file, "\n");
+				fflush(stdout);
+				coincs_found++;
+                if(coincs_found == output_n_events)
+                    break;
+			}
+        }
+        
+        if(endgame) {
+            if(endgame==(int)coinc_table_size) {break;}
+            endgame++;
